@@ -46,11 +46,18 @@ function my_login_logo() { ?>
     <style type="text/css">
         #login h1 a, .login h1 a {
             background-color: transparent;
-            background-image: url(<?php echo plugins_url(); ?>/DesignbueroFreisePlugIn/Designbuero-Freise.png);
+            background-image: url(<?php
+                if( fopen( get_template_directory_uri()."/images/Logo.png", "r" ) ) {
+                    echo get_template_directory_uri()."/images/Logo.png";
+                } else {
+                    echo plugins_url()."/DesignbueroFreisePlugIn/Designbuero-Freise.png";
+                }
+            ?>);
             padding-bottom: 30px;
             width: 310px;
             height: 75px;
             background-size: contain;
+            background-position: center bottom;
         }
     </style>
 <?php }
