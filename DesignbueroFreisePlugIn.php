@@ -47,7 +47,7 @@ function my_login_logo() { ?>
         #login h1 a, .login h1 a {
             background-color: transparent;
             background-image: url(<?php echo plugins_url(); ?>/DesignbueroFreisePlugIn/Designbuero-Freise.png);
-            padding-bottom: 60px;
+            padding-bottom: 30px;
             width: 310px;
             height: 75px;
             background-size: contain;
