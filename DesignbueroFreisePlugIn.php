@@ -5,7 +5,7 @@ Plugin URI: http://www.desingbuero-freise.de/
 Description:
 Version: 1.0.
 Author: Markus Freise
-Author URI: http://markus-freise.de/
+Author URI: http://markus-freise.de/ 
 */
 
 add_filter( 'use_default_gallery_style', '__return_false' );
