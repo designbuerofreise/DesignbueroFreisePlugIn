@@ -5,7 +5,7 @@ Plugin URI: http://www.desingbuero-freise.de/
 Description:
 Version: 1.0.
 Author: Markus Freise
-Author URI: http://markus-freise.de/ 
+Author URI: http://markus-freise.de/
 */
 
 add_filter( 'use_default_gallery_style', '__return_false' );
@@ -49,7 +49,7 @@ function my_login_logo() { ?>
         #login h1 a, .login h1 a {
             background-color: transparent;
             background-image: url(<?php
-                if( fopen( get_template_directory_uri()."/images/Logo.png", "r" ) ) {
+                if( @fopen( get_template_directory_uri()."/images/Logo.png", "r" ) ) {
                     echo get_template_directory_uri()."/images/Logo.png";
                 } else {
                     echo plugins_url()."/DesignbueroFreisePlugIn/Designbuero-Freise.png";
@@ -88,7 +88,7 @@ function wp_add_dashboard_widget_cb() {
 
 	?>
 	<div id="df_dashboard_information">
-		<p><img src="<?php echo plugins_url();?>/designbuerofreise/Designbuero-Freise-Bielefeld-Impressum.png" alt="Designbüro Freise"></p>
+		<p><img src="<?php echo plugins_url();?>/DesignbueroFreisePlugIn/Designbuero-Freise.png" alt="Designbüro Freise"></p>
 		<p><strong>Vielen Dank, dass Sie sich für das Designbüro Freise entschieden haben. Bei Fragen rund um Ihr Wordpress und Ihre Website freuen wir uns über einen Anruf oder über eine E-Mail.</strong></p>
 		<h2>So erreichen Sie uns:</h2>
 		<p><strong>Telefon: <a href="tel:+4952199997860">+49 (0) 521 . 9999786-0</a></strong><br>
